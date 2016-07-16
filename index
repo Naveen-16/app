@@ -4,13 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="js/bootstrap.min.css">
+    <link rel="stylesheet" href="js/man.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
     <script src="js/jquery-ui.js"></script>
-    <title></title>
+    <title>DooDle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        div{
+            overflow:hidden;
+
+        }
         .pad {
             background-color: purple;
             height: 100%;
@@ -71,7 +76,7 @@
             padding-left:35%;
         }
         @keyframes btnclick {
-            0%; {
+            0% {
                 background-color: transparent;
                 opacity: 1;
             }
@@ -122,6 +127,15 @@
                 top:100%;
             }
         }
+        ::-webkit-input-placeholder {
+            color: white;
+        }
+        input:focus {
+            outline: -webkit-focus-ring-color auto 5px;
+            outline-color: transparent;
+            outline-style: auto;
+            outline-width: 5px;
+        }
     </style>
     </head>
 
@@ -162,8 +176,28 @@
         <div id="circle" onclick="circleClick()" style="position: absolute;background: url(img/two.png);height: 28%;width: 50%;border-radius: 113%;left: 25%;top: 35%;"></div>
     </div>
 
+    <div id="header" style=" display:none;  background: #6ab344; height: 7%; width: 100%; padding-left: 2%; position: fixed; padding-top: 2%; z-index: 2; box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.38); "><img src="img/left.png" onclick="backMenu()" /></div>
+    <div id="menu" style="display: none; position: absolute; background: white;">
+        <div id="pics" onclick="DisplayImg()" style="height: 15%; width: 26%; background: transparent; margin-top: 16%; margin-left: 14%; box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius: 23%;">
+            <img src="img/photos.png" height="100%">
+        </div>
+        <div style="height: 15%; width: 26%; background: transparent; margin-top: -27%; margin-left: 53%; box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius: 23%;">
 
-    <div id="roller" style="display:none;" >
+        </div>
+        <div style="height: 15%; width: 26%; background: transparent; margin-top: 16%; margin-left: 14%; box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius: 23%;">
+
+        </div>
+        <div style="height: 15%; width: 26%; background: transparent; margin-top: -27%; margin-left: 53%; box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius: 23%;">
+
+        </div>
+        <div style="height: 15%; width: 26%; background: transparent; margin-top: 16%; margin-left: 14%; box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius: 23%;">
+
+        </div>
+        <div onclick="DisplaySetting()" style="height: 15%;width: 26%;background: transparent;margin-top: -27%;margin-left: 53%;box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.38); border-radius:23%;">
+            <img src="img/setting.jpg" height="105%">
+        </div>
+    </div>
+    <div id="roller" style="display:none; position:absolute; top:7% ;height:93%;" >
         
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -219,59 +253,118 @@
             </a>
         </div>
     </div>
-
-
-
-
-
-    <script>
-        var pass = "";
+    <div id="setting" style="display:none; width:100%; position:absolute; top:7% ;height:93%;background-color:white;">
         
-        $(document).ready(function () {
-            $('#init_div').width(window.screen.availWidth);
-            $('#init_div').height(window.screen.availHeight);
-            $('[id*=img]').width(window.screen.availWidth);
-            $('[id*=img]').height(window.screen.availHeight);
-        })
+        </div>
+    <div id="entryScrn" style="width: 100%; height: 100%; background: #381875; position: absolute; ">
+        <input type="number" placeholder="Mobile Number" style="
+    background: transparent;
+    border-color: transparent;
+    border-bottom-color: white;
+    margin-top: 30%;
+    margin-left: 11%;
+    height: 7%;
+    width: 75%;
+    font-size:230%;
+"><span onclick="checkotp()" class="glyphicon glyphicon-menu-right" style="
+    font-size: 260%;
+    color: white;
+    top: 2.5%;
+"></span>
 
-        function press(val) {
-            $('.cols').removeClass('act')
-            $(val).addClass('act');
-            if (pass.length == 3) {
-                pass += val.innerHTML;
-                $($('.checker').children()[pass.length-1]).addClass('typed')
-                if (pass == '1234') {
-                    
-                    pass = "";
-                    $($('.checker').children()).removeClass('typed')
-                    $('#init_div').hide()
-                    
-                    $('.pad,.checker,.row1,.row2,.row3,.row4').hide()
-                    $('#msg').show();
-                    $('#circle').addClass('circleit')
+    </div>
+
+        <script>
+            var pass = "";
+
+            $(document).ready(function () {
+                localStorage.setItem("passkey", "1234")
+                if (localStorage.getItem("status") == "0" ) {
+                    $('#entryScrn').show();
+                }
+                else if (localStorage.getItem("status") == "1") {
+                    $('#entryScrn').hide();
+                }
+                 else
+                {
+                    localStorage.setItem("status", "0")
+                    $('#entryScrn').show();
+                }
+                
+                $('#init_div').width(window.screen.availWidth);
+                $('#init_div').height(window.screen.availHeight);
+                $('[id*=img]').width($('#roller').width());
+                $('[id*=img]').height($('#roller').height());
+                $('#menu').css({ 'height': window.screen.availHeight, 'width': window.screen.availWidth })
+            })
+            
+            function press(val) {
+                $('.cols').removeClass('act')
+                $(val).addClass('act');
+                if (pass.length == 3) {
+                    $($('.checker').children()[pass.length + 1]).addClass('typed')
+                    pass += val.innerHTML;
+
+                    if (pass == localStorage.getItem("passkey")) {
+
+                        pass = "";
+                        $($('.checker').children()).removeClass('typed')
+                        $('#init_div').hide()
+
+                        $('.pad,.checker,.row1,.row2,.row3,.row4').hide()
+                        $('#msg').show();
+                        $('#circle').addClass('circleit')
+                    }
+                    else {
+                        pass = "";
+                        $('.checker').effect("pulsate", "fast");
+                        $($('.checker').children()).removeClass('typed')
+                    }
                 }
                 else {
-                    pass = "";
-                    $('.checker').effect("bounce", "slow");
-                    $($('.checker').children()).removeClass('typed')
+
+                    pass += val.innerHTML;
+                    $($('.checker').children()[pass.length - 1]).addClass('typed')
                 }
             }
-            else {
+
+            function circleClick() {
                 
-                pass += val.innerHTML;
-                $($('.checker').children()[pass.length-1]).addClass('typed')
+                $('#top').addClass('topper');
+                $('#bottom').addClass('bottomup')
+                setTimeout(fadder, 1900);
             }
-        }
-        function circleClick() {
-            $('#top').addClass('topper');
-            $('#bottom').addClass('bottomup')
-            setTimeout(fadder, 1900);
-        }
-        function fadder() {
-            $('#msg').hide();
-            $('#roller').fadeIn();
-        }
-    </script>
+
+            function fadder() {
+                $('#msg').hide();
+                $('#header').show()
+                $('#menu').fadeIn();
+            }
+
+            function backMenu() {
+                $('#roller').fadeOut();
+                $('#setting').fadeOut();
+                $('#menu').fadeIn();
+
+            }
+
+            function DisplayImg() {
+                $('#menu').fadeOut();
+                $('#roller').fadeIn();
+            }
+
+            function DisplaySetting() {
+                $('#menu').fadeOut();
+                $('#setting').fadeIn();
+            }
+
+            function checkotp() {
+
+
+            }
+            //https://control.msg91.com/api/sendhttp.php?authkey=104087Aj7bN1C28ZfB56b1dd58&mobiles=8148730316&message=aravindhan&sender=TINYAR&route=4&country=91&campaign=VR
+            //#B19CD9
+        </script>
 
 
 
