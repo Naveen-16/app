@@ -10,6 +10,7 @@
 <body>
     <style>
         .header {
+            z-index:5;
             height: 10%;
             width: 100%;
             position: absolute;
@@ -23,15 +24,43 @@
             bottom: 0px;
         }
         .body {
-            height: 87%;
+            height: 86%;
             width: 100%;
             position: absolute;
             overflow: auto;
-            top: 10%;
+            top: 13%;
+            
         }
+        .complaintList {
+            height: 87%;
+            width: 100%;
+            position: absolute;
+            top: 10%;
+            background: silver;
+            display: none;
+        }
+        .complaintListTab {
+            width: 20%;
+            height: 33%;
+            margin-top: 0.9%;
+            margin-left: 0.5%;
+            display: inline-block;
+            padding: 2%;
+            list-style-type: none;
+            border: 0px solid grey;
+            cursor: pointer;
+            box-shadow: 3px 3px 5px 1px grey;
+            background: white;
+            
+        }
+            .complaintListTab:hover {
+                box-shadow: 3px 3px 5px 1px silver;
+            }
+
+
         .main-tab {
-            width: 15%;
-            height: 28%;
+            width: 20%;
+            height: 36%;
             margin-top: 0.9%;
             margin-left: 0.5%;
             display: inline-block;
@@ -40,15 +69,59 @@
             border: 1px solid #d3d3d3;
             cursor: pointer;
             box-shadow: 3px 3px 5px 1px #d3d3d3;
+            
         }
         .main-tab:hover {
             box-shadow: 3px 3px 5px 1px white;
         }
+        .pop_log {
+            background: greenyellow;
+            padding: 1%;
+            font-size: large;
+        }
+        .pop_log:hover {
+            cursor:pointer;
+        }
+        .pop_log {
+            padding: 1%;
+            font-size: large;
+        }
 
+            .pop_log:hover {
+                cursor: pointer;
+            }
 
+        #logview_link:hover {
+            color: red;
+        }
 
-        @media screen and (min-height: 670px){
-            .main-tab {
+        #signview_link:hover {
+            color: red;
+        }
+        .home_icon {
+            position: absolute;
+            top: 11%;
+            left: 0.5%;
+            border: 1px solid transparent;
+            padding: 1%;
+            z-index:2;
+            border-radius: 83%;
+            box-shadow: 3px 3px 8px 0px red;
+            background:white
+        }
+            .home_icon:hover {                
+                cursor: pointer;                
+            }
+        .Cmp_state {
+            display: none;
+            width: 100%;
+            background: #f2b59f;
+            position: absolute;
+            height: 87%;
+            top: 10%;
+        }
+         @media screen and (min-height: 670px) {
+            .main-tab; {
                 cursor: pointer;
                 width: 19%;
                 height: 14%;
@@ -76,30 +149,83 @@
         ::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
             border-radius: 10px;
-        } 
+        }
+        input
+        {
+            border: 0.5px solid #0d5af6;
+            padding: 5px;
+        }
+
+        .mybtn {
+            border: 1px solid #0d5af6;
+            background: white;
+            color: #0d5af6;
+            padding: 0.5%;
+            
+            transition: width 2s;
+        }
+
+            .mybtn:hover {                
+                box-shadow: 1px 1px 3px 0px #0d5af6;
+            }
+        
     </style>
-    <div class="header"> <span><button type="button" class="btn btn-primary" onclick="fnOpenLog()"  style="background-color: royalblue; margin-right:10%; margin-top:1.2%; float:right; "> Lo </button></span></div>
-    <div class="body">
-        <ul style="height:94%;overflow:auto;">
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">1</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">2</li>
+    <div class="header"> </div>
+    <div class="home_icon" onclick="Loadhome()">
+        <img src="img/homepage.png" />
+    </div>
+    <div class="body" >
+        <ul style="height:94%;overflow:auto; margin-top:3%;">
+            <li onclick="fn_init_modal(this)" data-type="Rcomplaint" class="main-tab">1</li>
+            <li onclick="fn_init_modal(this)" data-type="Scomplaint" class="main-tab">2</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">3</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">4</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">5</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">6</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">7</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">8</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">9</li>
+            <!--<li onclick="fn_init_modal(this)" data-type="" class="main-tab">9</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">0</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">8</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">9</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">0</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">0</li>-->
         </ul>
 
 
 
     </div>
     <div class="footer"> </div>
+    <div class="complaintList">
+        <ul style="height:92%;overflow:auto; margin-top:4%;">
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">1</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">2</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">3</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">4</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">5</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">6</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">7</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">8</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">9</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">0</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">8</li>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">9</li>
+            
+        </ul>
+    </div>
+    <div class="Cmp_state">
+        <div style="background: #f4ece8; margin-top: 4%; margin-left: 5%; height: 87%; width: 90%; border-radius: 0.5%; box-shadow: 1px 1px 1px 2px coral; ">
+            <label style=" padding: 3%; padding-left: 7%;">No:</label>
+            <input  type="text" id="CmpNo" placeholder="Cno"/>
+            <span style="padding-left:1%;" onclick="fnProcessCmpStat()"><img src="img/right-arrow.png" /></span>
+            <!--<button type="button" class="mybtn" id="CmpStatSubmit">Submit</button>-->
+            <div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
     <div class="modal fade" id="General_modal" tabindex="-1" role="dialog"
          aria-labelledby="myModalLabel" aria-hidden="true">
 
@@ -139,27 +265,55 @@
     </div><!-- /.modal -->
 
     <script>
+
+        //575757
+        $(document).ready(function () {
+            
+
+        })
+        
+        //function fnloginview() {
+        //    $('#login_view').fadeIn()
+        //    $('#signup_view').hide()
+        //}
+        //function fnsignupview() {
+        //    $('#login_view').hide()
+        //    $('#signup_view').fadeIn()
+        //}
         function fn_init_modal(type) {
+            var cType = $(type).attr('data-type')
+            $('.body').fadeOut();
+            switch (cType) {
+                case "Rcomplaint":
+                    $('.complaintList').fadeIn()
+                    break;
+                case "Scomplaint":
+                    $('.Cmp_state').fadeIn()
+                    break;
+            }
 
-            $('#General_modal_body').html('');
-            $('#General_modal').modal();
 
-        }
-        function fnOpenLog() {
-
-            $('#myModalLabel').html('ara')
-            $('#General_modal_body').html('<ul class="nav nav-tabs"> <li class="active"><a data-toggle="tab" href="#log">Log</a></li> <li><a data-toggle="tab" href="#sign">Sign</a></li> </ul><div class="tab-content"> <div id="log" class="tab-pane fade in active"> <h3>Log In</h3> <div class="form-group"><input type="text" class="form-control" id="usr"> <input type="password"  class="form-control" id="pwd"> <button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnlogin()">Log</button></div> </div> <div id="sign" class="tab-pane fade"> <h3>Menu 1</h3><div class="form-group"><input type="text" class="form-control" id="usrname"><input type="password" class="form-control" id="usrpwd"><input type="text" class="form-control" id="usrmail"><input type="text" class="form-control" id="usrnum"><textarea type="text" class="form-control" id="usraddr"></textarea><button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnsignup()">Sign</button></div></div> </div>');
-            $('#General_modal').modal();
-            $('#General_modal .modal-footer').hide()
-
-        }
-        function fnlogin() {
-
-        }
-        function fnsignup() {
+            //$('#General_modal_body').html('');
+            //$('#General_modal').modal();
 
         }
+        function Loadhome() {
+            $('.complaintList,.Cmp_state').fadeOut()
+            $('.body').fadeIn();
+        }
+        function fnProcessCmpStat() {
+
+        }
+        //function fnOpenLog() {
+        //    $('#myModalLabel').html('ara')
+        //    $('#General_modal_body').html('<div class="pop_log"><span onclick="fnloginview()"id="logview_link">LOG IN </span> <span>/</span> <span onclick="fnsignupview()" id="signview_link">  SIGN UP </span> </div><div id="login_view" style="" class="form-group"><input type="text" class="form-control" id="usr"> <input type="password" class="form-control" id="pwd"> <button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnlogin()">Log</button></div><div id="signup_view" style="display:none;" class="form-group"><input type="text" class="form-control" id="usrname"><input type="password" class="form-control" id="usrpwd"><input type="text" class="form-control" id="usrmail"><input type="text" class="form-control" id="usrnum"><textarea type="text" class="form-control" id="usraddr"></textarea><button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnsignup()">Sign</button></div>');
+        //    $('#General_modal').modal();
+        //    $('#General_modal .modal-footer').hide()
+
+        //}
+
+        
+
     </script>
 </body>
-
 </html>
