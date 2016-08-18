@@ -558,7 +558,7 @@ required></textarea><br /><br />
     </div><!-- /.modal -->
     <div class="VApp">
         <div id="VReg_cont" style='   background:skyblue;     width: 50%;
-    height: 60%;
+    height: 62%;
     margin-left: 20%;
     margin-top: 11%;
 box-shadow:1px 1px 1px 1px;
@@ -573,8 +573,10 @@ box-shadow:1px 1px 1px 1px;
   </div>
 
     </div>
-    <div id="ChatBot" style="display:none; position: absolute; top: 62%; right: 2px; width: 20%; ">
-        <div>Bot</div>
+    <div id="ChatBot" style=" position: absolute; top: 58%; right: 2px; width: 20%; ">
+        <div style='background: #003399;
+    color: white;
+    padding: 5px;'>Bot<span style='float:right;'>X</span></div>
         <div class="Area" >
             <div class="chatArea" style=" height: 197px;overflow:auto;">
                 <span class="rob">Helo</span><br />
@@ -604,6 +606,7 @@ box-shadow:1px 1px 1px 1px;
             var UsrIn = $('#User').val();
             var Text = "<span class='usr'>" + UsrIn + "</span><br>";
             $('.chatArea').append(Text)
+$('#User').val("")
 
         }
         /*
