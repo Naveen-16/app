@@ -9,20 +9,20 @@
 
 <body>
     <style>
-        .header {
-            z-index:5;
-            height: 10%;
-            width: 100%;
-            position: absolute;
-            background: #003399;
-            box-shadow: 0px 3px 20px 0px #7f7979;
-        }
-        .footer {
-            height: 3%;
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-        }
+            .header {
+                z-index:5;
+                height: 10%;
+                width: 100%;
+                position: absolute;
+                background: #003399;
+                box-shadow: 0px 3px 20px 0px #7f7979;
+            }
+            .footer {
+                height: 3%;
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+            }
         .body {
             height: 86%;
             width: 100%;
@@ -36,146 +36,270 @@
             width: 100%;
             position: absolute;
             top: 10%;
-            background: silver;
+            background: #fbeaea;
             display: none;
         }
-        .complaintListTab {
-            width: 20%;
-            height: 33%;
-            margin-top: 0.9%;
-            margin-left: 0.5%;
-            display: inline-block;
-            padding: 2%;
-            list-style-type: none;
-            border: 0px solid grey;
-            cursor: pointer;
-            box-shadow: 3px 3px 5px 1px grey;
-            background: white;
+            .complaintListTab {
+                width: 20%;
+                height: 33%;
+                margin-top: 0.9%;
+                margin-left: 0.5%;
+                display: inline-block;
+                padding: 2%;
+                list-style-type: none;
+                border: 0px solid grey;
+                cursor: pointer;
+                box-shadow: 3px 3px 5px 1px grey;
+                background: white;
             
-        }
+            }
             .complaintListTab:hover {
                 box-shadow: 3px 3px 5px 1px silver;
             }
 
 
-        .main-tab {
-            width: 20%;
-            height: 36%;
-            margin-top: 0.9%;
-            margin-left: 0.5%;
-            display: inline-block;
-            padding: 2%;
-            list-style-type: none;
-            border: 1px solid #d3d3d3;
-            cursor: pointer;
-            box-shadow: 3px 3px 5px 1px #d3d3d3;
-            
-        }
-        .main-tab:hover {
-            box-shadow: 3px 3px 5px 1px white;
-        }
-        .pop_log {
-            background: greenyellow;
-            padding: 1%;
-            font-size: large;
-        }
-        .pop_log:hover {
-            cursor:pointer;
-        }
-        .pop_log {
-            padding: 1%;
-            font-size: large;
-        }
-
-            .pop_log:hover {
-                cursor: pointer;
-            }
-
-        #logview_link:hover {
-            color: red;
-        }
-
-        #signview_link:hover {
-            color: red;
-        }
-        .home_icon {
-            position: absolute;
-            top: 11%;
-            left: 0.5%;
-            border: 1px solid transparent;
-            padding: 1%;
-            z-index:2;
-            border-radius: 83%;
-            box-shadow: 3px 3px 8px 0px red;
-            background:white
-        }
-            .home_icon:hover {                
-                cursor: pointer;                
-            }
-        .Cmp_state {
-            display: none;
-            width: 100%;
-            background: #f2b59f;
-            position: absolute;
-            height: 87%;
-            top: 10%;
-        }
-         @media screen and (min-height: 670px) {
-            .main-tab; {
-                cursor: pointer;
-                width: 19%;
-                height: 14%;
+            .main-tab {
+                width: 25%;
+                height: 43%;
                 margin-top: 0.9%;
                 margin-left: 0.5%;
                 display: inline-block;
                 padding: 2%;
                 list-style-type: none;
                 border: 1px solid #d3d3d3;
+                cursor: pointer;
                 box-shadow: 3px 3px 5px 1px #d3d3d3;
+            
             }
-        }
-        .modal-body .form-control {
-        width:50%;
-        margin-top:1%;
-        }
-        .modal-body button {
-            margin-top: 1%;
-        }
-         ::-webkit-scrollbar {
+            .main-tab:hover {
+                box-shadow: 3px 3px 5px 1px white;
+            }
+            .pop_log {
+                background: greenyellow;
+                padding: 1%;
+                font-size: large;
+            }
+            .pop_log:hover {
+                cursor:pointer;
+            }
+            .pop_log {
+                padding: 1%;
+                font-size: large;
+            }
+
+                .pop_log:hover {
+                    cursor: pointer;
+                }
+
+            #logview_link:hover {
+                color: red;
+            }
+
+            #signview_link:hover {
+                color: red;
+            }
+            .home_icon {
+                position: absolute;
+                top: 11%;
+                left: 0.5%;
+                border: 1px solid transparent;
+                padding: 1%;
+                z-index:2;
+                border-radius: 83%;
+                box-shadow: 3px 3px 8px 0px red;
+                background:white
+            }
+                .home_icon:hover {                
+                    cursor: pointer;                
+                }
+            .Cmp_state {
+                display: none;
+                width: 100%;
+                background: #f2b59f;
+                position: absolute;
+                height: 87%;
+                top: 10%;
+            }
+
+
+             @media screen and (min-height: 670px) {
+                .main-tab; {
+                    cursor: pointer;
+                    width: 19%;
+                    height: 14%;
+                    margin-top: 0.9%;
+                    margin-left: 0.5%;
+                    display: inline-block;
+                    padding: 2%;
+                    list-style-type: none;
+                    border: 1px solid #d3d3d3;
+                    box-shadow: 3px 3px 5px 1px #d3d3d3;
+                }
+            }
+            .modal-body .form-control {
+            width:50%;
+            margin-top:1%;
+            }
+            .modal-body button {
+                margin-top: 1%;
+            }
+        ::-webkit-scrollbar {
             width: 5px;
             height: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
         }
 
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-            border-radius: 10px;
-        }
-        input
-        {
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+            }
+        input {
             border: 0.5px solid #0d5af6;
             padding: 5px;
+            font-family: ProximaNova,Arial,Sans-serif !important;
+        }
+        label {
+width:30%;
+            font-family: ProximaNova,Arial,Sans-serif !important;
         }
 
-        .mybtn {
-            border: 1px solid #0d5af6;
-            background: white;
-            color: #0d5af6;
-            padding: 0.5%;
+            .mybtn {
+                border: 1px solid #0d5af6;
+                background: white;
+                color: #0d5af6;
+                padding: 0.5%;
             
-            transition: width 2s;
-        }
+                transition: width 2s;
+            }
 
             .mybtn:hover {                
                 box-shadow: 1px 1px 3px 0px #0d5af6;
             }
-        #Cmp_state table td {
+            .CmpDetailsTd {
             vertical-align: top;
-            max-width: 401px;
+            max-width: 725px;
             padding: 1%;
             word-wrap: break-word;
             border: 3px solid transparent;
             min-width: 150px;
             font-family: Calibri;
+            }
+
+            .CmpDetailsTdH {
+            vertical-align: top;
+            max-width: 201px;
+            padding: 1%;
+            word-wrap: break-word;
+            border: 3px solid transparent;
+            min-width: 150px;
+            font-family: Calibri;
+            }
+            #myProgress {
+                position: relative;
+                width: 80%;
+                margin-left: 9%;
+                height: 6%;
+                margin-top: 1%;
+                background-color: #ddd;
+            }
+
+            #myBar {
+                position: absolute;
+                width: 0%;
+                height: 100%;
+                background-color: #4CAF50;
+            }
+        .complaintant_det {
+            width: 45%;
+            height: 71%;
+            margin-left: 4%;
+            margin-top: 6%;
+            border-radius: 2%;
+            padding: 3%;
+            padding-bottom:0px;
+            background: whitesmoke;
+            box-shadow: 1px 1px 3px 1px black;
+        }
+            .complaintant_det label {
+                width: 30%;
+                vertical-align: top;
+            }
+        .complaint_det label {
+            width: 30%;
+            vertical-align: top;
+        }
+        
+         .complaint_det {
+            width: 46%;
+            height: 77%;
+            position: absolute;
+            left: 51%;
+            top: 14%;
+            border-radius: 2%;
+            padding: 3%;
+            background: whitesmoke;
+            box-shadow: 1px 1px 3px 1px black;
+        }
+        .EDownload {
+            top: 10%;
+            position: absolute;
+            width: 100%;
+            height: 86%;
+            background: white;
+            display:none;
+        }
+        .EDownload_list {
+            
+            margin-left: 15%;
+            margin-top: 5%;
+            height: 81%;
+            margin-right: 13%;
+            padding-left: 5%;
+        }
+        .EDownload_list_cont {
+            background: white;
+            height: 13%;
+            cursor: pointer;
+            width: 400px;
+            padding: 9px;
+            margin-top: 2%;
+            border-radius: 2%;
+            box-shadow: 2px 2px 2px 1px silver;
+        }
+        .VApp {
+            width: 100%;
+            background-color: white;
+            height: 96%;
+            position: absolute;
+            display:none;
+        }
+        .usr {
+            float: right;
+            color: red;
+            width: 177px;
+            background-color: whitesmoke;
+            word-wrap: break-word;
+            padding: 5px;
+            border: 1px solid silver;
+            border-radius: 10px;
+            margin-top: 2px;
+        }
+
+        .rob {
+            margin-top: 2px;
+            float: left;
+            color: green;
+            width: 177px;
+            background-color: whitesmoke;
+            word-wrap: break-word;
+            padding: 5px;
+            border: 1px solid silver;
+            border-radius: 10px;
+        }
+
+        .Area {
+            height: 196px;
+            width: 266px;
         }
     </style>
     <div class="header"> </div>
@@ -186,25 +310,135 @@
         <ul style="height:94%;overflow:auto; margin-top:3%;">
             <li onclick="fn_init_modal(this)" data-type="Rcomplaint" class="main-tab">1</li>
             <li onclick="fn_init_modal(this)" data-type="Scomplaint" class="main-tab">2</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">3</li>
+            <li onclick="fn_init_modal(this)" data-type="VApp" class="main-tab">3</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">4</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">5</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">6</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">7</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="main-tab">8</li>
+            <li onclick="fn_init_modal(this)" data-type="VStatus" class="main-tab">7</li>
+            <li onclick="fn_init_modal(this)" data-type="EDownload" class="main-tab">8</li>
             <!--<li onclick="fn_init_modal(this)" data-type="" class="main-tab">9</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">0</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">8</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">9</li>
             <li onclick="fn_init_modal(this)" data-type="" class="main-tab">0</li>-->
         </ul>
-
+        
 
 
     </div>
     <div class="footer"> </div>
     <div class="complaintList">
-        <ul style="height:90.5%;overflow:auto; margin-top:4%;">
+        <form id="CmpReg"  action="#">
+            <div class="complaintant_det">
+                <label>District:</label><select id="Cmpt_Region"><option value="0">Select District</option>
+<option value="1">ARIYALUR</option>
+<option value="2">CHENNAI CITY</option>
+<option value="3">CHENNAI RAILWAYS</option>
+<option value="4">COIMBATORE</option>
+<option value="5">COIMBATORE CITY</option>
+<option value="6">CUDDALORE</option>
+<option value="7">DHARMAPURI</option>
+<option value="8">DINDIGUL</option>
+<option value="9">ERODE</option>
+<option value="10">KANCHEEPURAM</option>
+<option value="11">KANYAKUMARI</option>
+<option value="12">KARUR</option>
+<option value="13">KRISHNAGIRI</option>
+<option value="14">MADURAI</option>
+<option value="15">MADURAI CITY</option>
+<option value="16">NAGAPATTINAM</option>
+<option value="17">NAMAKKAL</option>
+<option value="18">NILGIRIS</option>
+<option value="19">PERAMBALUR</option>
+<option value="20">PUDUKKOTTAI</option>
+<option value="21">RAMANATHAPURAM</option>
+<option value="22">SALEM</option>
+<option value="23">SALEM CITY</option>
+<option value="24">SIVAGANGAI</option>
+<option value="25">THANJAVUR</option>
+<option value="26">THENI</option>
+<option value="27">THOOTHUKUDI</option>
+<option value="28">TIRUNELVELI</option>
+<option value="29">TIRUNELVELI CITY</option>
+<option value="30">TIRUPPUR</option>
+<option value="31">TIRUPPUR CITY</option>
+<option value="32">TIRUVALLUR</option>
+<option value="33">TIRUVANNAMALAI</option>
+<option value="34">TIRUVARUR</option>
+<option value="35">TRICHY</option>
+<option value="36">TRICHY CITY</option>
+<option value="37">TRICHY RAILWAYS</option>
+<option value="38">VELLORE</option>
+<option value="39">VILLUPURAM</option>
+<option value="40">VIRUDHUNAGAR</option>
+</select><br /><br />
+                <label>Name:</label><input type="text" id="CmptName" required /><br /><br />
+                <label>Gender</label><select id="Cmpt_Gender"><option value="0">Male</option><option value="1">Female</option><option value="2"> 
+
+Others</option></select><br /><br />
+                <label>2</label><input type="date" id="Cmpt_Bday" required /><br /><br />
+                <label>3</label><textarea id="Cmpt_Address" style="margin: 0px; max-width: 349px; max-height: 85px; min-width: 349px; min-height: 85px;" 
+
+required></textarea><br /><br />
+                <label>4</label><input type="text" id="Cmpt_Mobile"  maxlength="10"  required /><br /><br />
+                <label>5</label><input type="email" id="Cmpt_Email" style="width:65%;" /><br /><br />
+            </div>
+            <div class="complaint_det">
+                <label>Sub</label><select id="Cmp_Subject" style="width:330px;"><option value="0">Select Subject</option>
+                    <option value="1">OTHERS (பிற குற்றங்கள்)</option>
+                    <option value="2">ATTEMPT TO COMMIT CRIME (குற்றம் நிகழத்த முயற்சி)</option>
+                    <option value="3">CHARGING EXORBITANT INTEREST (அளவு கடந்த வட்டி வசூலித்தல்)</option>
+                    <option value="4">CONSPIRACY (சதி)</option>
+                    <option value="5">COUNTERFEITING OF CURRENCY (கள்ள நாணயம் தயாரித்தல்)</option>
+                    <option value="6">CRIMINAL INTIMIDATION (குற்றமுறு மிரட்டுதல்)</option>
+                    <option value="7">CRIMINAL TRESPASS (குற்றமுறு அச்சுறுத்தல்)</option>
+                    <option value="8">CYBER CRIMES (இணையதள குற்றங்கள்)</option>
+                    <option value="9">DACOITY (கூட்டுக் கொள்ளை)</option>
+                    <option value="10">DOCUMENT MISSING (காணாமல் போன ஆவணம்)</option>
+                    <option value="11">EMBEZZLEMENT (பணமோசடி)</option>
+                    <option value="12">EVE TEASING (கேலி செய்தல்)</option>
+                    <option value="13">EXTORTION (அச்சுறுத்திப் பறித்தல்)</option>
+                    <option value="14">FORGERY (பொய் ஆவணம் புனைதல் )</option>
+                    <option value="15">HURT (உடல் ஊறு)</option>
+                    <option value="16">IMPERSONATION (ஆள் மாறாட்டம்)</option>
+                    <option value="17">INCITEMENT (தூண்டுதல்)</option>
+                    <option value="18">JUVENILE DELINQUENCY (இளமை தீச்செயல்)</option>
+                    <option value="19">KIDNAPPING (ஆட்கடத்தல்)</option>
+                    <option value="20">LAND GRABBING (நில அபகரிப்பு)</option>
+                    <option value="21">MISAPPROPRIATION (கையாடல் / பணம் கையாடல்)</option>
+                    <option value="22">MISCHIEF (தீங்கு)</option>
+                    <option value="23">MISSING PERSONS (காணாமல் போன ஆட்கள்)</option>
+                    <option value="24">MOBILE MISSING (காணாமல் போன கைபேசி)</option>
+                    <option value="25">MURDER (கொலை)</option>
+                    <option value="26">NON BANKING FINANCIAL INSTITUTION CASES (தனியார் நிதிநிறுவன வழக்குகள்)</option>
+                    <option value="27">NUISANCE (தொல்லை)</option>
+                    <option value="28">OFFENCES AGAINST RELIGION &amp; PUBLIC WORSHIP (மத  வழிபாட்டுதலங்களுக்கெதிரான குற்றங்கள்)</option>
+                    <option value="29">OFFENCES AGAINST STATE (அரசுக்கு எதிரான குற்றங்கள்)</option>
+                    <option value="30">OFFENCES RELATING TO MARRIAGE (திருமணம் சார் குற்றங்கள்)</option>
+                    <option value="31">POLITICAL OFFENCE (அரசியல் குற்றங்கள்)</option>
+                    <option value="32">QUARREL / ALTERCATIONS (வாய்தகராறு)</option>
+                    <option value="33">RAGGING (வன்சீண்டல்)</option>
+                    <option value="34">RAPE (கற்பழிப்பு)</option>
+                    <option value="35">ROBBERY (கொள்ளை)</option>
+                    <option value="36">STOLEN PROPERTY (திருட்டுச் சொத்து)</option>
+                    <option value="37">THEFT (திருட்டு)</option>
+                    <option value="38">TRAFFIC VIOLATIONS (போக்குவரத்து விதி மீறுகை)</option>
+                    <option value="39">VEHICLE MISSING (காணாமல் போன வாகனம்)</option>
+                    <option value="40">WOMEN HARASSMENT (பெண் சீண்டல்)</option>
+                    <option value="41">WRONGFUL CONFINEMENT (சட்ட விரோதமாக அடைத்து வைத்தல்)</option>
+                    </select><br /><br />
+                <label></label><input type="date" id="Cmp_Docc" /><!-- date of occurance--><br /><br />
+                <label></label><textarea id="Cmp_Place" style="margin: 0px; max-width: 342px; max-height: 56px; min-width: 342px; min-height: 56px;"></textarea><br 
+
+/><br />
+                <label></label><textarea id="Cmp_Desc" style="margin: 0px; max-width: 345px; max-height: 122px; min-width: 345px; min-height: 122px;" 
+
+required></textarea><br /><br />
+                <!--<input type="file" id="Cmp_File"  data-content="" />-->
+                <button  class="btn btn-primary" onclick="fnAuthenticate()" style=" float: right;" form="CmpReg">Submit</button>
+
+            </div>
+        </form>
+
+        <!--<ul style="height:90.5%;overflow:auto; margin-top:4%;">
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">1</li>
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">2</li>
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">3</li>
@@ -216,9 +450,8 @@
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">9</li>
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">0</li>
             <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">8</li>
-            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">9</li>
-            
-        </ul>
+            <li onclick="fn_init_modal(this)" data-type="" class="complaintListTab">9</li>           
+        </ul>-->
     </div>
     <div class="Cmp_state">
         <div style="background: #f4ece8; margin-top: 4%; margin-left: 5%; height: 87%; width: 90%; border-radius: 0.5%; box-shadow: 1px 1px 1px 2px coral; ">
@@ -227,16 +460,29 @@
             <span style="padding-left:1%;cursor:pointer;" onclick="fnProcessCmpStat()"><img src="img/right-arrow.png" /></span>
             <!--<button type="button" class="mybtn" id="CmpStatSubmit">Submit</button>-->
             <div style="width: 100%; height: 80%;">
-            <table id="CmpDetails" style="width: 90%;  height: 82%; margin-left: 5%;">
+                <div style="width: 100%; height: 80%; overflow:auto;">
+                    <table id="CmpDetails" style="width: 90%;  height: 82%; margin-left: 5%;"></table>
 
-            </table>
+                </div>
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
                 
             </div>
 
         </div>
         
     </div>
-
+    <div class="VState_Scrn"></div>
+    <div class="EDownload">
+        <div class="EDownload_list">
+            <div class="EDownload_list_cont">1</div>
+            <div class="EDownload_list_cont">2</div>
+            <div class="EDownload_list_cont">3</div>
+            <div class="EDownload_list_cont">4</div>
+            <div class="EDownload_list_cont">5</div>
+        </div>
+    </div>
     <div class="modal fade" id="General_modal" tabindex="-1" role="dialog"
          aria-labelledby="myModalLabel" aria-hidden="true">
 
@@ -274,15 +520,108 @@
         </div><!-- /.modal-dialog -->
 
     </div><!-- /.modal -->
+    <div class="modal fade" id="Authenticate_modal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
 
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius:0px;">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+
+                <div class="modal-body" id="General_modal_body">
+                    <input type="text" id="Reg_OTP" />
+                    <label style="color:red;" id="cmp_o_res"></label>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="fnsednOtp('0')" >
+                        ReSend
+                    </button>
+
+                    <button type="button" class="btn btn-primary" onclick="fnCmpProcess()">
+                        Submit
+                    </button>
+                </div>
+
+
+
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+
+    </div><!-- /.modal -->
+    <div class="VApp">
+        <div id="VReg_cont" style='   background:skyblue;     width: 50%;
+    height: 60%;
+    margin-left: 20%;
+    margin-top: 11%;
+box-shadow:1px 1px 1px 1px;
+    padding: 3%;'>
+            <h3>Appointment</h3>
+            <label></label><input type="text" id="VReg_id" style='width:39%;' required/>
+<br><br>            <label></label><input style='width:39%;' type="text" id="VReg_SKid"  required/><br><br>
+
+            <label></label><input type="datetime-local" id="VReg_time" required /><br><br>
+           <center> <button onclick="" class='btn btn-default' style=''>Submit</button>
+</center>      
+  </div>
+
+    </div>
+    <div id="ChatBot" style="display:none; position: absolute; top: 62%; right: 2px; width: 20%; ">
+        <div>Bot</div>
+        <div class="Area" >
+            <div class="chatArea" style=" height: 197px;overflow:auto;">
+                <span class="rob">Helo</span><br />
+
+            </div>
+            <div><input type="text" id="User" style=" " /><button type="button" onclick="Process()">Send</button></div>
+        </div>
+    </div>
     <script>
 
-        //575757
+        
         $(document).ready(function () {
             
 
         })
         
+        $('#Cmpt_Mobile').keyup(function(){
+            
+            var Tempval = ($('#Cmpt_Mobile').val()).trim();
+            if(isNaN(Tempval)==true){
+                Tempval = Tempval.slice(0, Tempval.length-1)
+                $('#Cmpt_Mobile').val(Tempval);             
+            }
+
+        })
+        function Process() {
+            var UsrIn = $('#User').val();
+            var Text = "<span class='usr'>" + UsrIn + "</span><br>";
+            $('.chatArea').append(Text)
+
+        }
+        /*
+        $('#Cmp_File').on('change', function () {
+            var preview = document.querySelector('input[type=file]');
+            var file = document.querySelector('input[type=file]').files[0];
+            var reader = new FileReader();
+
+            reader.addEventListener("load", function () {
+                preview.setAttribute("data-content",reader.result);
+                //preview.click();
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        });
+        */
         //function fnloginview() {
         //    $('#login_view').fadeIn()
         //    $('#signup_view').hide()
@@ -291,6 +630,109 @@
         //    $('#login_view').hide()
         //    $('#signup_view').fadeIn()
         //}
+        function fnsednOtp(Flag) {
+            if (Flag == '0') {
+                $.ajax({
+                    type: "POST",
+                    url: "https://control.msg91.com/api/sendhttp.php?authkey=104087Aj7bN1C28ZfB56b1dd58&mobiles=8148730316&message=" + sessionStorage.Rand + 
+
+"&sender=ANNIVE&route=4&country=91&campaign=VR",
+                    data: "",
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+
+                    }
+                });
+            }
+            else {
+                $.ajax({
+                    type: "POST",
+                    url: "https://control.msg91.com/api/sendhttp.php?authkey=104087Aj7bN1C28ZfB56b1dd58&mobiles=8148730316&message=" + Flag + 
+
+"&sender=ANNIVE&route=4&country=91&campaign=VR",
+                    data: "",
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+
+                    }
+                });
+            }
+        }
+        function fnAuthenticate() {
+            
+            var Element =[]// ['CmptName',  'Cmpt_Bday', 'Cmpt_Address', 'Cmpt_Mobile', 'Cmpt_Email', 'Cmp_Subject', 'Cmp_Docc', 'Cmp_Desc'];
+            var E_State = true;
+            for (var i = 0; i < Element.length; i++) {
+                if (document.getElementById(Element[i]).value == "" || document.getElementById(Element[i]).value == 0 || document.getElementById(Element[i]).value == 
+
+"0" ||document.getElementById(Element[i]).value == "Select District") {
+                    E_State = false;
+                }
+            }
+            if (E_State) {
+                $('#Authenticate_modal').modal();
+                sessionStorage.Rand = Math.floor(Math.random() * 10000);
+                fnsednOtp("0")
+                // $('#Reg_OTP').val(sessionStorage.Rand);
+                
+            }
+            else {
+                return false;
+            }
+            
+        }
+        function fnCmpProcess() {
+            if ($('#Reg_OTP').val() == sessionStorage.Rand) {
+                $('#cmp_o_res').html("");
+                $('#Reg_OTP').val("");
+                var CurrDate=new Date();
+
+            var ComplaintDetail = {
+                Name:$('#CmptName').val(),
+                Gender:$('#Cmpt_Gender').val(),
+                DOB:$('#Cmpt_Bday').val(),
+                Address:$('#Cmpt_Address').val(),
+                Mobile:$('#Cmpt_Mobile').val(),
+                Email:$('#Cmpt_Email').val(),
+                Subject:$('#Cmp_Subject').val(),
+                Place:$('#Cmp_Place').val(),
+                IncidentDate:$('#Cmp_Docc').val(),
+                Description:$('#Cmp_Desc').val(),
+            }
+            var ReadyData = {
+                Region: Cmpt_Region.selectedOptions[0].innerText,
+                CmpRegDate: CurrDate.toUTCString(),
+                Subject: $('#Cmp_Subject').val(),
+                //Subject: 's',
+                Details:JSON.stringify(ComplaintDetail)
+            }
+            ReadyData = JSON.stringify(ReadyData)
+            $.ajax({
+                type: "POST",
+                url: "MainService.svc/RegComp",
+                data: ReadyData,
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    $('.body').fadeOut();
+                    $('.complaintList').fadeIn()
+                    $('#Authenticate_modal').modal("hide");
+                    fnsednOtp(data.d)
+                    alert($('#Cmpt_Mobile').val())
+                    $('#Cmpt_Mobile').val("");
+                }
+            });
+
+            
+            
+            }else{
+                $('#cmp_o_res').html("Invalid");
+
+        }
+        
+        }
         function fn_init_modal(type) {
             var cType = $(type).attr('data-type')
             $('.body').fadeOut();
@@ -301,6 +743,14 @@
                 case "Scomplaint":
                     $('.Cmp_state').fadeIn()
                     break;
+                case "EDownload":
+                    $('.EDownload').fadeIn()
+                    break;
+                case "VApp":
+                    $('.VApp').fadeIn()
+                    break;
+                    
+                    
             }
 
 
@@ -309,34 +759,65 @@
 
         }
         function Loadhome() {
-            $('.complaintList,.Cmp_state').fadeOut()
+            $('.complaintList,.Cmp_state,.EDownload,.VApp').fadeOut()
             $('.body').fadeIn();
         }
         function fnProcessCmpStat() {
-            var objectArray = [{
-                "Total": "34",
-                "Version": "1.0.4vdfg",
-                "Version2": "1.0.445",
-                "Version3": "1.0.45454",
-                "Version4": "1.540.4",
-                "Version7": "541.0.4",
-                "Office": "New Yorksaddddddddddddddddddddddddddddd ddddddddddddddddddddddddd   ddddddddddddddddddddddddddddd"
-            }];
-            var txt = ""
-            for (var i = 0; i < (Object.keys(objectArray[0]).length); i++) {
+            $.ajax({
+                type: "POST",
+                url: "MainService.svc/GetComp",
+                data: ReadyData = JSON.stringify({ "CmpId": $('#CmpNo').val() }),
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    if(data.d[1]=='error'){
+                        alert('Check Id')
+                    }else{
+                        var objectArray = [JSON.parse(data.d[1])];
+                        var txt = ""
+                        for (var i = 0; i < (Object.keys(objectArray[0]).length) ; i++) {
 
-                txt += "<tr>"
-                txt += "<td>" + Object.keys(objectArray[0])[i] + "</td><td>" + objectArray[0][Object.keys(objectArray[0])[i]] + "</td>"
-                try { txt += "<td>" + Object.keys(objectArray[0])[i + 1] + "</td><td>" + objectArray[0][Object.keys(objectArray[0])[i + 1]] + "</td>" }
-                catch (err) { console.log('indexOut') };
-                txt += "</tr>"
+                            txt += "<tr>"
+                            txt += "<td class='CmpDetailsTdH'>" + Object.keys(objectArray[0])[i] + "</td><td class='CmpDetailsTd'>" + objectArray[0][Object.keys
 
-            }
-            $('#CmpDetails').html(txt)
+(objectArray[0])[i]] + "</td>"
+                            //try { txt += "<td>" + Object.keys(objectArray[0])[i + 1] + "</td><td>" + objectArray[0][Object.keys(objectArray[0])[i + 1]] + "</td>" }
+                            //catch (err) { console.log('indexOut') };
+                            txt += "</tr>"
+
+                        }
+                        txt += "<tr><td class='CmpDetailsTdH'>Remark</td><td class='CmpDetailsTd'>" + data.d[4] + "</td></tr>";
+                        var stat = parseInt(data.d[0]) * 25;
+                        $('#myBar').css({ "width": stat + "%" })
+                        $('#CmpDetails').html(txt)
+                    }
+                }
+            });
+
+
+//            var objectArray = [
+//{"Name":"gdfg","Gender":"2","DOB":"2016-08-09","Address":"gdg","Mobile":"gdgd","Email":"a@c.com","Subject":"","Place":"dad","IncidentDate":"2016-08-
+
+09","Description":"dad"}
+                
+//            ];
+           
         }
         //function fnOpenLog() {
         //    $('#myModalLabel').html('ara')
-        //    $('#General_modal_body').html('<div class="pop_log"><span onclick="fnloginview()"id="logview_link">LOG IN </span> <span>/</span> <span onclick="fnsignupview()" id="signview_link">  SIGN UP </span> </div><div id="login_view" style="" class="form-group"><input type="text" class="form-control" id="usr"> <input type="password" class="form-control" id="pwd"> <button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnlogin()">Log</button></div><div id="signup_view" style="display:none;" class="form-group"><input type="text" class="form-control" id="usrname"><input type="password" class="form-control" id="usrpwd"><input type="text" class="form-control" id="usrmail"><input type="text" class="form-control" id="usrnum"><textarea type="text" class="form-control" id="usraddr"></textarea><button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnsignup()">Sign</button></div>');
+        //    $('#General_modal_body').html('<div class="pop_log"><span onclick="fnloginview()"id="logview_link">LOG IN </span> <span>/</span> <span 
+
+onclick="fnsignupview()" id="signview_link">  SIGN UP </span> </div><div id="login_view" style="" class="form-group"><input type="text" class="form-control" id="usr"> 
+
+<input type="password" class="form-control" id="pwd"> <button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnlogin
+
+()">Log</button></div><div id="signup_view" style="display:none;" class="form-group"><input type="text" class="form-control" id="usrname"><input type="password" 
+
+class="form-control" id="usrpwd"><input type="text" class="form-control" id="usrmail"><input type="text" class="form-control" id="usrnum"><textarea type="text" 
+
+class="form-control" id="usraddr"></textarea><button type="button" style="background-color:#003399;" class="btn btn-primary" onclick="fnsignup
+
+()">Sign</button></div>');
         //    $('#General_modal').modal();
         //    $('#General_modal .modal-footer').hide()
 
