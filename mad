@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title></title>
+    <style>
+        .header{
+
+        }
+        .body {
+        }
+        .footer{
+
+        }
+        .Product {
+            width: 20%;
+            display: inline-block;
+border:1px solid;
+            padding:1%;
+        }
+        .PrdImg{
+
+        }
+        .PrdDesc{
+
+        }
+        .ColorPalete {
+            height: 22px;
+            border: 1px solid transparent;
+            width: 25px;
+            border-radius: 32%;
+            background:red;
+            float:right;
+        }
+        .PrdFoot{
+
+        }
+        .PrdCat {
+            float: right;
+            width: 55%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="body">
+        <ul>
+            <li class="Product">
+                <div class="PrdImg">
+                    <img src="http://www.w3schools.com/html/pic_mountain.jpg" style=" height: 210px; width: 239px;">
+                    </div>
+                    <div class="PrdDesc">
+                        <h4>aravind</h4>
+                        <p><strong >100</strong> <span class="PrdCat">50</span> </p>
+                        
+                        <div><span>25</span><div class="ColorPalete"></div> </div>
+                    </div>
+
+                    <div class="PrdFoot">
+                        <!--<a data-toggle="collapse" data-target="#demo">Simple collapsible</a>
+                        <div id="demo" class="collapse">
+                            strongLook smart in this T-shirt from Colors Couture. Team it with a pair of jeans or trousers and sneakers for a great look
+                        </div>-->
+
+
+                    </div>
+                
+
+            </li>
+            <li class="Product">
+                <div class="PrdImg"></div>
+                <div class="PrdDesc">
+                    <p><strong>100</strong> </p>
+                    <p><span>50</span> </p>
+                    <p><span>25</span> <p>
+                    <p><span>10</span> </p>
+                    <p><div class="ColorPalete"></div>Color </p>
+                </div>
+
+                <div class="PrdFoot">
+                    <!--<p>
+                        <strong>Description</strong><br />
+                        Look smart in this T-shirt from Colors Couture. Team it with a pair of jeans or trousers and sneakers for a great look
+                    </p>-->
+
+
+                </div>
+
+
+            </li>
+        </ul>
+        
+    </div>
+    <div class="footer"></div>
+
+    <script>
+        $.ajax({
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            url: 'https://hackerearth.0x10.info/api/fashion?type=json&query=list_products',
+            data: {},
+            dataType: "json",
+
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+
+            }
+        });
+    
+
+
+    </script>
+</body>
+</html>
