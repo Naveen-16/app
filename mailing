@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Net.Mail;
+using System.Web.Services;
+
+namespace LocationAPI
+{
+    /// <summary>
+    /// Summary description for Testing
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+    // [System.Web.Script.Services.ScriptService]
+    public class Testing : System.Web.Services.WebService
+    {
+
+        [WebMethod]
+        public string HelloWorld()
+        {
+
+            MailMessage mm = new MailMessage("aravindhan.16@outlook.com", "aravindhan.r@shriramvalue.in");
+            mm.Subject = "test";
+            mm.Body = "<!DOCTYPE html> <html> <head> <style> table { border-collapse: collapse; width: 100%; } th, td { text-align: left; padding: 8px; } tr:nth-child(even){background-color: #f2f2f2} th { background-color: #4CAF50; color: white; } </style> </head> <body> <h2>Colored Table Header</h2> <table> <tr> <th>Firstname</th> <th>Lastname</th> <th>Savings</th> </tr> <tr> <td>Peter</td> <td>Griffin</td> <td>$100</td> </tr> <tr> <td>Lois</td> <td>Griffin</td> <td>$150</td> </tr> <tr> <td>Joe</td> <td>Swanson</td> <td>$300</td> </tr> <tr> <td>Cleveland</td> <td>Brown</td> <td>$250</td> </tr> </table> </body> </html>";
+            //if (FileUpload1.HasFile)
+            //{
+            //    string FileName = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
+            //    mm.Attachments.Add(new Attachment(FileUpload1.PostedFile.InputStream, FileName));
+            //}
+            mm.IsBodyHtml = true;
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp.live.com";
+            smtp.EnableSsl = true;
+            System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
+            NetworkCred.UserName = "aravindhan.16@outlook.com";
+            NetworkCred.Password = "Aravind@16";
+            smtp.UseDefaultCredentials = true;
+            smtp.Credentials = NetworkCred;
+            smtp.Port = 587;
+            smtp.Send(mm);
+            return "Email Sent SucessFully.";
+        }
+    }
+}
