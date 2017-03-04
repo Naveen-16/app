@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>[SUBJECT]</title>
+	<style type="text/css">
+
+		#outlook a {padding:0;}
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ExternalClass {width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;display:inline-block;}
+		.image_fix {display:block;}
+		
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color: red !important; 
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color: purple !important; 
+		}
+
+		table td {border-collapse: collapse;}
+
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		a {color: #000;}
+
+		@media only screen and (max-device-width: 480px) {
+
+			a[href^="tel"], a[href^="sms"] {
+				text-decoration: none;
+				color: black; /* or whatever your want */
+				pointer-events: none;
+				cursor: default;
+			}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+				text-decoration: default;
+				color: orange !important; /* or whatever your want */
+				pointer-events: auto;
+				cursor: default;
+			}
+		}
+
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			a[href^="tel"], a[href^="sms"] {
+				text-decoration: none;
+				color: blue; /* or whatever your want */
+				pointer-events: none;
+				cursor: default;
+			}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+				text-decoration: default;
+				color: orange !important;
+				pointer-events: auto;
+				cursor: default;
+			}
+		}
+
+		p {
+			margin:0;
+			color:#555;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:16px;
+			line-height:160%;
+		}
+		a.link2{
+			text-decoration:none;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:16px;
+			color:#fff;
+			border-radius:4px;
+		}
+		h2{
+			color:#181818;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:22px;
+			font-weight: normal;
+		}
+
+		.bgItem{
+			background:#F4A81C;
+		}
+		.bgBody{
+			background:#ffffff;
+		}
+
+	</style>
+
+<script type="colorScheme" class="swatch active">
+  {
+    "name":"Default",
+    "bgBody":"ffffff",
+    "link":"f2f2f2",
+    "color":"555555",
+    "bgItem":"F4A81C",
+    "title":"181818"
+  }
+</script>
+
+</head>
+<body>
+	<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+    <table cellpadding="0" cellspacing="15" border="0" bgcolor="#f0f4f5" width="100%" style="margin:0 auto; max-width:440px; font-family:arial;">
+        <tbody>
+            <tr bgcolor="#ffffff"> <td> <table cellpadding="15" cellspacing="0" border="0" width="100%"> <tbody><tr> <td valign="middle"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></td> <td align="right"> <a href="http://prolinks.rediffmailpro.com/cgi-bin/prored.cgi?red=http%3A%2F%2Ffreechargemail1%2Ein%2Flt%2Fr%2F100512893%2FYXJhdmluZGhhbi5yJTQwc2hyaXJhbXZhbHVlLmlu%2FaHR0cHMlM0ElMkYlMkZwbGF5Lmdvb2dsZS5jb20lMkZzdG9yZSUyRmFwcHMlMkZkZXRhaWxzJTNGaWQlM0Rjb20uZnJlZWNoYXJnZS5hbmRyb2lk&amp;isImage=0&amp;BlockImage=0&amp;rediffng=0" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a> <a href="http://prolinks.rediffmailpro.com/cgi-bin/prored.cgi?red=http%3A%2F%2Ffreechargemail1%2Ein%2Flt%2Fr%2F100512893%2FYXJhdmluZGhhbi5yJTQwc2hyaXJhbXZhbHVlLmlu%2FaHR0cHMlM0ElMkYlMkZpdHVuZXMuYXBwbGUuY29tJTJGaW4lMkZhcHAlMkZpZDg3NzQ5NTkyNiUzRm10JTNEOA%3D%3D&amp;isImage=0&amp;BlockImage=0&amp;rediffng=0" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a> <a href="http://prolinks.rediffmailpro.com/cgi-bin/prored.cgi?red=http%3A%2F%2Ffreechargemail1%2Ein%2Flt%2Fr%2F100512893%2FYXJhdmluZGhhbi5yJTQwc2hyaXJhbXZhbHVlLmlu%2FaHR0cHMlM0ElMkYlMkZ3d3cubWljcm9zb2Z0LmNvbSUyRmVuLXVzJTJGc3RvcmUlMkZhcHBzJTJGZnJlZWNoYXJnZS1yZWNoYXJnZS1tb2JpbGUtZHRoLWRhdGEtY2FyZCUyRjl3emRuY3Jkc3I5NA%3D%3D&amp;isImage=0&amp;BlockImage=0&amp;rediffng=0" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a></td> </tr> </tbody></table> </td> </tr>
+            <tr bgcolor="#ffffff"><td> <table cellpadding="0" cellspacing="0" border="0"> <tbody><tr><td><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></td></tr> <tr>  <td> <table cellpadding="15" cellspacing="0" border="0" width="100%"> <tbody><tr><td> <p style="margin:0; padding:0px; font-family:arial; font-size:13px; color:#121212; line-height:18px; padding-bottom:10px;"> Hi Aravind, </p> <p style="margin:0; padding:0px; font-family:arial; font-size:13px; color:#121212; line-height:18px"> Here is a one-time verification code to reset your password.<br /> This code ensures that only you can access your account. </p>   </td></tr>  </tbody></table> </td> </tr> </tbody></table> </td></tr>
+            <tr bgcolor="#ffffff"><td> <table cellpadding="0" cellspacing="15" border="0" width="100%">   <tbody><tr><td>   <table cellpadding="10" cellspacing="0" border="0" width="100%" style="border:solid #f4f4f4 1px"> <tbody>   <tr> <td style="border-right:solid #f4f4f4 1px;border-bottom:solid #f4f4f4 1px;"><p style="margin:0; padding:0px; font-family:arial; font-size:12px; color:#121212; line-height:13px;"><strong>Your Verification Code: </strong>  </p></td> <td align="right" style="border-bottom:solid #f4f4f4 1px;"><p style="margin:0; padding:0px; font-family:arial; font-size:14px; color:#121212; line-height:13px;">0895</p></td> </tr> <tr> <td style="border-right:solid #f4f4f4 1px;"><p style="margin:0; padding:0px; font-family:arial; font-size:12px; color:#121212; line-height:13px;"><strong>Valid for:</strong>  </p></td> <td align="right"><p style="margin:0; padding:0px; font-family:arial; font-size:12px; color:#121212; line-height:13px;">8 minutes</p></td> </tr> </tbody></table> </td> </tr>  </tbody></table> </td></tr>
+            <tr bgcolor="#ffffff">     <td><table cellpadding="20" cellspacing="0" border="0" width="100%">         <tbody>           <tr>             <td><p align="center" style="font-size:13px;padding:0px; margin:0px; line-height:20px;                color:#121212">Now use your FreeCharge Balance at</p>               <p align="center"> <img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></p>               <p align="center" style="font-size:13px;padding:0px; margin:0px; line-height:13px;                color:#121212;padding-bottom:10px;">And this list is only getting <span style="font-size:14px;">bigger!</span></p>               <table cellpadding="0" cellspacing="0" border="0">                 <tbody><tr>                   <td valign="middle"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></td>                   <td><p style="font-size:13px;padding:0px; margin:0px; padding-left:5px; line-height:20px;color:#121212; text-align:center;">Avail exciting cashbacks and discounts<a href="http://prolinks.rediffmailpro.com/cgi-bin/prored.cgi?red=http%3A%2F%2Ffreechargemail1%2Ein%2Flt%2Fr%2F100512893%2FYXJhdmluZGhhbi5yJTQwc2hyaXJhbXZhbHVlLmlu%2FaHR0cCUzQSUyRiUyRm9mZmVycy5mcmVlY2hhcmdlLmNvbSUyRmZyZWVjaGFyZ2VnbyUyRg%3D%3D&amp;isImage=0&amp;BlockImage=0&amp;rediffng=0" target="_blank" style="color:#e4724d; text-decoration:none;" rel="external"> here </a></p></td>                    </tr>               </tbody></table></td>           </tr>         </tbody>       </table></td>   </tr>
+            <tr bgcolor="#ffffff">
+                <td>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%"> <tbody><tr bgcolor="#ffffff"><td> <table cellpadding="15" cellspacing="0" border="0"> <tbody><tr><td> <table cellpadding="0" cellspacing="0" border="0" width="100%">  <tbody><tr> <td><p style="margin:0; padding:0px; font-family:arial; font-size:13px; color:#121212; line-height:20px;padding-bottom:10px;">For any queries or concerns, write to us at <a href="javascript:void(0);" onclick="top.ajaxMail.ext.switchTo('@Compose','mode=mail_to_individual&amp;email=care@freecharge.in');" style="color:#38bef0; text-decoration:none; ">care@freecharge.in</a></p>   </td> </tr> <tr> <td><p style="margin:0; padding:0px; font-family:arial; font-size:13px; color:#121212; line-height:20px; ">Best,<br /> Team FreeCharge</p> <p style="margin:0; padding:0px; font-family:arial; font-size:11px; color:#333; line-height:20px; font-style:italic;">* FreeCharge balance is issued by YES Bank</p> </td> </tr> </tbody></table> </td> </tr> </tbody></table> </td></tr>  </tbody></table> <img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" />   <div class="unsubscribe">
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<!-- End of wrapper table -->
+</body>
+</html>
