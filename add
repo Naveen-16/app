@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>[SUBJECT]</title>
+	<style type="text/css">
+
+		#outlook a {padding:0;}
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+		.ExternalClass {width:100%;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+		a img {border:none;display:inline-block;}
+		.image_fix {display:block;}
+		
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+			color: red !important; 
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+			color: purple !important; 
+		}
+
+		table td {border-collapse: collapse;}
+
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		a {color: #000;}
+
+		@media only screen and (max-device-width: 480px) {
+
+			a[href^="tel"], a[href^="sms"] {
+				text-decoration: none;
+				color: black; /* or whatever your want */
+				pointer-events: none;
+				cursor: default;
+			}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+				text-decoration: default;
+				color: orange !important; /* or whatever your want */
+				pointer-events: auto;
+				cursor: default;
+			}
+		}
+
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+			a[href^="tel"], a[href^="sms"] {
+				text-decoration: none;
+				color: blue; /* or whatever your want */
+				pointer-events: none;
+				cursor: default;
+			}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+				text-decoration: default;
+				color: orange !important;
+				pointer-events: auto;
+				cursor: default;
+			}
+		}
+
+		p {
+			margin:0;
+			color:#555;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:16px;
+			line-height:160%;
+		}
+		a.link2{
+			text-decoration:none;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:16px;
+			color:#fff;
+			border-radius:4px;
+		}
+		h2{
+			color:#181818;
+			font-family:Helvetica, Arial, sans-serif;
+			font-size:22px;
+			font-weight: normal;
+		}
+
+		.bgItem{
+			background:#F4A81C;
+		}
+		.bgBody{
+			background:#ffffff;
+		}
+
+	</style>
+
+<script type="colorScheme" class="swatch active">
+  {
+    "name":"Default",
+    "bgBody":"ffffff",
+    "link":"f2f2f2",
+    "color":"555555",
+    "bgItem":"F4A81C",
+    "title":"181818"
+  }
+</script>
+
+</head>
+<body>
+	<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+    <table class="main" style="position:relative" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <div style="border: 1px solid #eaeaea; width:452px; float:left;">
+                        <div style="width:100%;margin:auto;padding:27px 0 30px 0; overflow: hidden;">
+
+
+                        </div>
+                        <div style="background:#F7FCFE;color:#5b5b5b;font-family:'Open Sans', Arial, sans-serif;font-size:13px;line-height:17px;clear:both;padding:35px 5%; float:left;">
+                            <div style="width:100%; float:left; padding:0 0 45px 0; ">
+                                <div style="width:140px;float:left; font-size:11px; text-align:center; color:#4e4e4e;">
+                                    Transaction ID
+                                    <span style=" font-weight:600; display:block;color: #252525;">7385048698</span>
+                                </div>
+                                <div style="width:140px;float:right; font-size:11px; text-align:center; color:#4e4e4e;">
+                                    Transaction Date
+                                    <span style=" font-weight:600; display:block;color: #252525;">Mar 3, 2017 14:03:44 </span>
+                                </div>
+                            </div>
+                            <div>
+                                <table cellpadding="0" cellspacing="0" style="border=&quot;0&quot;">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:80px;"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></td>
+                                            <td>
+                                                <div style="float:left; margin: 3px 0 0 28px; font-size: 22px; line-height:29px; font-weight: 100;color:#000000;">
+                                                    You added <span style="color:#00B0DE; font-weight: 600;">₹400 </span> to your Paytm wallet.
+                                                    <span style="font-size:15px; clear:both; display:block; padding-top:10px; font-weight: 100;color:#000000;">Updated wallet balance is <span style=" font-weight: 400;">₹400.0</span></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+
+
+                        <div style="background:#00B0DE; height:10px;"></div>
+                        <div style="background:#0E2855; height:10px; border-bottom:1px solid #EAEAEA;"></div>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="452" border="0" cellspacing="0" cellpadding="0" style="padding:15px 0;">
+                        <tbody>
+                            <tr>
+                                <td style="font-family:'Open Sans', Arial, sans-serif,Arial,sans-serif;font-size:12px;">
+                                    <div style="float:left; width:50%;" class="downInfo">
+                                        Download Paytm App
+                                        <div style="width:40%;display:inline-block;">
+                                            <a style="vertical-align: middle; padding: 0 0 0 4%;display: inline-block;" href="http://email.paytm.com/wf/click?upn=7uEaPZdoK5d2kp73JFbvlsg99qSnjtEyVyJUDAxm9S-2FceDozSh5epS8MmYlgiyPg6HHy8vGD6RSsco64-2F2GewQx2fqnNSzFUFL14IFpnJ-2BRv6ybh1k7U4RKhxw5J-2BIrC_cUZzw7e6ulj01Lg7E9k-2BQ-2FMuD9QtPwYw6-2FuTQ1AuaISrgOJ8OlpRLzJ1Aq3X0Sh3CVr2UVGUjFIxgsgW83ZYJuAxIUqOBoQ-2BfZDEerRC-2BEC-2FvEMpMMXxbvCLPJmf-2BuJ5SS-2BECTfaz9vxIXeTfG3ezUf3xqyPIolKJgpNED8dDrty24bPLZGswRoLrW4O7MvuVJkuYaTotw86tXgxCJsp7K6gcGSYDVXSF9lrCmz1dZs-3D" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a>
+                                            <a style="vertical-align: middle; padding: 0 0 0 4%;display: inline-block;" href="http://email.paytm.com/wf/click?upn=IKuVQxBFPo7wLgUI3YPlxCw1PHfVdUhB-2Fe81CbmZmPMYKogqrYIoK7qG0-2FHzSIgqRbGTO3QDDFlJ4lhZpSSWUvw44uK5FRmt7w34TEVMqcI-3D_cUZzw7e6ulj01Lg7E9k-2BQ-2FMuD9QtPwYw6-2FuTQ1AuaISrgOJ8OlpRLzJ1Aq3X0Sh3CVr2UVGUjFIxgsgW83ZYJrWZOnxTDwcUT18ker-2F-2BfnlYL-2F5RLuWfGbCipTV7X1IslKyQxKZQabT3azQDowE7QXRPNvpahhcfkgejaUt68PfCyMqVEDd67VgHTinP-2Fy8v3AcP328M92A1gcCLoqXlUqYmBvp6XAcoWvrVaXMQMdQ-3D" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a>
+                                            <a style="vertical-align: middle; padding: 0 0 0 4%;display: inline-block;" href="http://email.paytm.com/wf/click?upn=-2BhfPodxGWzgquKNILrY2vhp6JXrWgo29HkJL1diP8kk9iZCVVrqE2svceoEEXvafGiMh066IwRgPibZOhqoQP1T1zSLJfRNgtWImrEnJ8w1o82fL6YCAl62bPdYmNqV8_cUZzw7e6ulj01Lg7E9k-2BQ-2FMuD9QtPwYw6-2FuTQ1AuaISrgOJ8OlpRLzJ1Aq3X0Sh3CVr2UVGUjFIxgsgW83ZYJhk7f7HkZTsZ0-2FTDBiXtjK1uKBo2sTh5YikPsUbHmzUZEiryxO9SWoKOO3ewFOuUtZDLZvNjo-2FT4R5MlVod-2Bs860FB5vrpYhgUvKJp5rPsLNFUld2-2BgQhI5Gbak-2FfaOd-2BlBf6AZCxRbh2er9NUlnFHs-3D" target="_blank" rel="external"><img src="https://webmail.rediffmailpro.com/ajaxprism/pix/grayblock.gif" /></a>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<!-- End of wrapper table -->
+</body>
+</html>
