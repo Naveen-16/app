@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+     <style>
+        
         .w3-black, .w3-hover-black:hover {
             color: #fff !important;
             background-color: #0054d2 !important;
@@ -36,8 +37,8 @@
                 Jeans <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
-                <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-                <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+                <a href="#div1" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+                <a href="#div2" class="w3-bar-item w3-button">Relaxed</a>
                 <a href="#" class="w3-bar-item w3-button">Bootcut</a>
                 <a href="#" class="w3-bar-item w3-button">Straight</a>
             </div>
@@ -61,79 +62,79 @@
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:250px">
+    <div class="w3-main" style="margin-left:250px;overflow:hidden; ">
+        <div id="div1">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
 
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">Jeans</p>
 
-        <!-- Top header -->
-        <header class="w3-container w3-xlarge">
-            <p class="w3-left">Jeans</p>
+            </header>
 
-        </header>
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
 
-        <!-- Image header -->
-        <div class="w3-display-container w3-container">
-            <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
-            <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
-                <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-                <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-                <h1 class="w3-hide-small">COLLECTION 2016</h1>
-                
-            </div>
-        </div>
-
-        <div class="w3-container w3-text-grey" id="jeans">
-            
-        </div>
-
-        <!-- Product grid -->
-        <div class="w3-row w3-grayscale">
-            <div class="w3-col l12 s12 w3-justify" >
-                <div class="w3-container">
-                    <!--<img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">-->
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                </div>                
-            </div>
-            <div class="w3-col l12 s12">
-                <div class="w3-container">
-                  <table style="width:100%;">
-                      <tr>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                          <td>4</td>
-                      </tr>
-                      <tr>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                          <td>4</td>
-                      </tr>
-                      <tr>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                          <td>4</td>
-                      </tr>
-                      <tr>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                          <td>4</td>
-                      </tr>
-                      <tr>
-                          <td>1</td>
-                          <td>2</td>
-                          <td>3</td>
-                          <td>4</td>
-                      </tr>
-                      
-                  </table>
                 </div>
             </div>
 
-            <!--<div class="w3-col l3 s6">
+            <div class="w3-container w3-text-grey" id="jeans">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <!--<div class="w3-col l3 s6">
                 <div class="w3-container">
                     <div class="w3-display-container">
                         <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
@@ -177,8 +178,125 @@
                     <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
                 </div>
             </div>-->
+            </div>
         </div>
+        <div id="div2" >
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
 
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">Jeafgfdns</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="jeans">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <!--<div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">New</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
+                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">Sale</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+                    <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">
+                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                </div>
+            </div>-->
+            </div>
+        </div>
         <!-- Subscribe section -->
         <!--<div class="w3-container w3-black w3-padding-32">
             <h1>Subscribe</h1>
@@ -188,46 +306,46 @@
         </div>-->
 
         <!-- Footer -->
-        <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-            <div class="w3-row-padding">                                
-                <div class="w3-col s12">
-                    <div class="w3-col l6 s6 w3-justify">
-                        <div class="w3-container">
-                            <h4>Store</h4>
-                            <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-                            <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-                            <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-                        </div>
-                    </div>
-                    <div class="w3-col l6 s6 w3-justify" >
-                        <div class="w3-container">
-                            <h4>We accept</h4>
-                            <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-                            <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="w3-col l12 s12">
-                        <div class="w3-container">
-                            <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
-                            <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
-                            <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
-                            <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
-                            <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
-                            <br>
-                        </div>
-                    </div> 
-                            
-                        </div>
-                    </div>
-</footer>
+        
 
         <!--<div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>-->
 
         <!-- End page content -->
     </div>
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+        <div class="w3-row-padding">
+            <div class="w3-col s12">
+                <div class="w3-col l6 s6 w3-justify">
+                    <div class="w3-container">
+                        <h4>Store</h4>
+                        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+                        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                    </div>
+                </div>
+                <div class="w3-col l6 s6 w3-justify">
+                    <div class="w3-container">
+                        <h4>We accept</h4>
+                        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
+                        <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
+                        <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
+                        <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
+                        <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
+                        <br>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </footer>
     <!-- Newsletter Modal -->
     <div id="newsletter" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
