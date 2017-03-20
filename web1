@@ -3,11 +3,11 @@
     <title>vr</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <style>
         
         .w3-black, .w3-hover-black:hover {
             color: #fff !important;
@@ -20,6 +20,25 @@
         body, h1, h2, h3, h4, h5, h6, .w3-wide {
             font-family: "Montserrat", sans-serif;
         }
+        .slideAnimation {
+            animation-name: slideAnim;
+            -webkit-animation-name: slideAnim;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+        @keyframes slideAnim {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
     </style>
 </head>
 <body class="w3-content" style="max-width:1200px" cz-shortcut-listen="true">
@@ -31,12 +50,13 @@
             <h3 class="w3-wide"><b>LOGO</b></h3>
         </div>
         <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-            <a href="#" class="w3-bar-item w3-button">Shirts</a>
-            <a href="#" class="w3-bar-item w3-button">Dresses</a>
-            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-                Jeans <i class="fa fa-caret-down"></i>
+            <a  class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+                Home
             </a>
-            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium w3-show">
+            <a href="#" class="w3-bar-item w3-button">Shirts</a>
+            <a  onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button">Dresses</a>
+            
+            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
                 <a href="#div1" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
                 <a href="#div2" class="w3-bar-item w3-button">Relaxed</a>
                 <a href="#" class="w3-bar-item w3-button">Bootcut</a>
@@ -63,19 +83,68 @@
 
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:250px;overflow:hidden; ">
-        <div id="div1">
+        <div id="Home" >
             <!-- Push down content on small screens -->
             <div class="w3-hide-large" style="margin-top:83px"></div>
 
             <!-- Top header -->
             <header class="w3-container w3-xlarge">
-                <p class="w3-left">Jeans</p>
+                <p class="w3-left"></p>
 
             </header>
 
             <!-- Image header -->
             <div class="w3-display-container w3-container">
-                <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+                <img src="img/bg1.jpg" alt="h" style="width:100%">
+                <div class="w3-display-bottomright w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">We Make Your</h1>
+                    <h1 class="w3-jumbo w3-hide-small">Ride Colourful</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">We Make Your</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">Ride Colourful</h1>
+                    <!--<h1 class="w3-hide-small">COLLECTION 2016</h1>-->
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="h">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-right">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/.jpg" style="width:100%">-->
+                        <p>Vaanavil Tourism is the pioneer in providing a pleasant and memorable journey to our  customers. We have </p>
+                    </div>
+                </div>  
+                <div class="w3-col s12 l12 w3-row-padding" id="Servies">
+                    <div class="w3-container w3-center">
+                        <h3>SERVICES</h3>
+                    </div>                    
+                        <div class="w3-col l6 s12 w3-justify">
+                            <div class="w3-container w3-center">                                
+                                <div><i class="fa fa-home fa-5x" aria-hidden="true"></i></div>
+                                <h4>Store</h4>
+                                <b>Passion</b>
+                            </div>
+                        </div>
+                    </div>                       
+            </div>
+        </div>
+        <div id="div1" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="https://www.w3schools.com/w3images/h.jpg" alt="h" style="width:100%">
                 <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
                     <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
                     <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
@@ -84,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="w3-container w3-text-grey" id="jeans">
+            <div class="w3-container w3-text-grey" id="h">
 
             </div>
 
@@ -92,7 +161,7 @@
             <div class="w3-row w3-grayscale">
                 <div class="w3-col l12 s12 w3-justify">
                     <div class="w3-container">
-                        <!--<img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">-->
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                     </div>
                 </div>
@@ -137,50 +206,50 @@
                 <!--<div class="w3-col l3 s6">
                 <div class="w3-container">
                     <div class="w3-display-container">
-                        <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
+                        <img src="https://www.w3schools.com/w3images/h2.jpg" style="width:100%">
                         <span class="w3-tag w3-display-topleft">New</span>
                         <div class="w3-display-middle w3-display-hover">
                             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
                         </div>
                     </div>
-                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+                    <p>Mega Ripped h<br><b>$19.99</b></p>
                 </div>
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
                 </div>
             </div>
 
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
                 </div>
                 <div class="w3-container">
                     <div class="w3-display-container">
-                        <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+                        <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
                         <span class="w3-tag w3-display-topleft">Sale</span>
                         <div class="w3-display-middle w3-display-hover">
                             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
                         </div>
                     </div>
-                    <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+                    <p>Vintage Skinny h<br><b class="w3-text-red">$14.99</b></p>
                 </div>
             </div>
 
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
-                    <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+                    <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
+                    <p>Vintage Skinny h<br><b>$14.99</b></p>
                 </div>
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">
-                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                    <img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">
+                    <p>Ripped Skinny h<br><b>$24.99</b></p>
                 </div>
             </div>-->
             </div>
         </div>
-        <div id="div2" >
+        <div id="div2" style="display:none;">
             <!-- Push down content on small screens -->
             <div class="w3-hide-large" style="margin-top:83px"></div>
 
@@ -192,7 +261,7 @@
 
             <!-- Image header -->
             <div class="w3-display-container w3-container">
-                <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Jeans" style="width:100%">
+                <img src="https://www.w3schools.com/w3images/h.jpg" alt="h" style="width:100%">
                 <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
                     <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
                     <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
@@ -201,7 +270,7 @@
                 </div>
             </div>
 
-            <div class="w3-container w3-text-grey" id="jeans">
+            <div class="w3-container w3-text-grey" id="h">
 
             </div>
 
@@ -209,7 +278,7 @@
             <div class="w3-row w3-grayscale">
                 <div class="w3-col l12 s12 w3-justify">
                     <div class="w3-container">
-                        <!--<img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">-->
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                     </div>
                 </div>
@@ -254,45 +323,45 @@
                 <!--<div class="w3-col l3 s6">
                 <div class="w3-container">
                     <div class="w3-display-container">
-                        <img src="https://www.w3schools.com/w3images/jeans2.jpg" style="width:100%">
+                        <img src="https://www.w3schools.com/w3images/h2.jpg" style="width:100%">
                         <span class="w3-tag w3-display-topleft">New</span>
                         <div class="w3-display-middle w3-display-hover">
                             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
                         </div>
                     </div>
-                    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+                    <p>Mega Ripped h<br><b>$19.99</b></p>
                 </div>
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
                 </div>
             </div>
 
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans3.jpg" style="width:100%">
-                    <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
                 </div>
                 <div class="w3-container">
                     <div class="w3-display-container">
-                        <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
+                        <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
                         <span class="w3-tag w3-display-topleft">Sale</span>
                         <div class="w3-display-middle w3-display-hover">
                             <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
                         </div>
                     </div>
-                    <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+                    <p>Vintage Skinny h<br><b class="w3-text-red">$14.99</b></p>
                 </div>
             </div>
 
             <div class="w3-col l3 s6">
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans4.jpg" style="width:100%">
-                    <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+                    <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
+                    <p>Vintage Skinny h<br><b>$14.99</b></p>
                 </div>
                 <div class="w3-container">
-                    <img src="https://www.w3schools.com/w3images/jeans1.jpg" style="width:100%">
-                    <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+                    <img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">
+                    <p>Ripped Skinny h<br><b>$24.99</b></p>
                 </div>
             </div>-->
             </div>
@@ -315,37 +384,41 @@
     <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
         <div class="w3-row-padding">
             <div class="w3-col s12">
-                <div class="w3-col l6 s6 w3-justify">
+                <div class="w3-col l4 s0 w3-justify">
                     <div class="w3-container">
-                        <h4>Store</h4>
-                        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
-                        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-                        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
                     </div>
                 </div>
-                <div class="w3-col l6 s6 w3-justify">
-                    <div class="w3-container">
-                        <h4>We accept</h4>
-                        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-                        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="w3-col l12 s12">
-                    <div class="w3-container">
-                        <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
-                        <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
-                        <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
-                        <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
-                        <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
-                        <br>
-                    </div>
-                </div>
+                        <div class="w3-col l4 s6 w3-justify">
+                            <div class="w3-container">
+                                <h4>Store</h4>
+                                <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                                <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+                                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                            </div>
+                        </div>
+                        <div class="w3-col l4 s6 w3-justify">
+                            <div class="w3-container">
+                                <h4>We accept</h4>
+                                <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                                <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="w3-col l12 s12">
+                            <div class="w3-container">
+                                <i class="fa fa-facebook-official w3-xlarge w3-hover-text-indigo"></i>
+                                <i class="fa fa-instagram w3-xlarge w3-hover-text-purple"></i>
+                                <i class="fa fa-twitter w3-xlarge w3-hover-text-light-blue"></i>
+                                <i class="fa fa-pinterest w3-xlarge w3-hover-text-red"></i>
+                                <i class="fa fa-flickr w3-xlarge w3-hover-text-blue"></i>
+                                <br>
+                            </div>
+                        </div>
 
-            </div>
-        </div>
-    </footer>
+                    </div>
+                </div>
+</footer>
     <!-- Newsletter Modal -->
     <div id="newsletter" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
@@ -370,7 +443,7 @@
             }
         }
 
-        // Click on the "Jeans" link on page load to open the accordion for demo purposes
+        // Click on the "h" link on page load to open the accordion for demo purposes
         document.getElementById("myBtn").click();
 
 
@@ -384,6 +457,19 @@
             document.getElementById("mySidebar").style.display = "none";
             document.getElementById("myOverlay").style.display = "none";
         }
+        $(window).scroll(function (event) {
+            
+            $('#Servies [class="w3-container w3-center"]').each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass('slideAnimation');
+                }
+                
+
+            })
+        })
     </script>
 
 
