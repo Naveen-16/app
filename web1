@@ -53,19 +53,19 @@
             <a  class="w3-button w3-block w3-white w3-left-align" id="myBtn">
                 Home
             </a>
-            <a href="#" class="w3-bar-item w3-button">Shirts</a>
+            <a href="#div3" class="w3-bar-item w3-button">Shirts</a>
             <a  onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button">Dresses</a>
             
             <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
                 <a href="#div1" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
                 <a href="#div2" class="w3-bar-item w3-button">Relaxed</a>
-                <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-                <a href="#" class="w3-bar-item w3-button">Straight</a>
+                <a href="#div8" class="w3-bar-item w3-button">Bootcut</a>
+                <a href="#div9" class="w3-bar-item w3-button">Straight</a>
             </div>
-            <a href="#" class="w3-bar-item w3-button">Jackets</a>
-            <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-            <a href="#" class="w3-bar-item w3-button">Blazers</a>
-            <a href="#" class="w3-bar-item w3-button">Shoes</a>
+            <a href="#div4" class="w3-bar-item w3-button">Jackets</a>
+            <a href="#div5" class="w3-bar-item w3-button">Gymwear</a>
+            <a href="#div6" class="w3-bar-item w3-button">Blazers</a>
+            <a href="#div7" class="w3-bar-item w3-button">Shoes</a>
         </div>
         <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
@@ -366,20 +366,493 @@
             </div>-->
             </div>
         </div>
-        <!-- Subscribe section -->
-        <!--<div class="w3-container w3-black w3-padding-32">
-            <h1>Subscribe</h1>
-            <p>To get special offers and VIP treatment:</p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-            <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-        </div>-->
+        <div id="div3" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
 
-        <!-- Footer -->
-        
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
 
-        <!--<div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>-->
+            </header>
 
-        <!-- End page content -->
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="img/Shirt.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div4">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <!--<div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="https://www.w3schools.com/w3images/h2.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">New</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Mega Ripped h<br><b>$19.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/h3.jpg" style="width:100%">
+                    <p>Washed Skinny h<br><b>$20.50</b></p>
+                </div>
+                <div class="w3-container">
+                    <div class="w3-display-container">
+                        <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
+                        <span class="w3-tag w3-display-topleft">Sale</span>
+                        <div class="w3-display-middle w3-display-hover">
+                            <button class="w3-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                    <p>Vintage Skinny h<br><b class="w3-text-red">$14.99</b></p>
+                </div>
+            </div>
+
+            <div class="w3-col l3 s6">
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/h4.jpg" style="width:100%">
+                    <p>Vintage Skinny h<br><b>$14.99</b></p>
+                </div>
+                <div class="w3-container">
+                    <img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">
+                    <p>Ripped Skinny h<br><b>$24.99</b></p>
+                </div>
+            </div>-->
+            </div>
+        </div>
+        <div id="div5" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="https://www.w3schools.com/w3images/h.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div6">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
+         <div id="div6" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="img/Blazer.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div8">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
+           <div id="div7" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="img/Shoes.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div10">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
+        <div id="div8" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="img/Shoes.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div11">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
+        <div id="div9" style="">
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+
+            <!-- Top header -->
+            <header class="w3-container w3-xlarge">
+                <p class="w3-left">h</p>
+
+            </header>
+
+            <!-- Image header -->
+            <div class="w3-display-container w3-container">
+                <img src="img/Shoes.jpg" alt="h" style="width:100%">
+                <div class="w3-display-topleft w3-padding-xxlarge w3-text-white">
+                    <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                    <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                    <h1 class="w3-hide-small">COLLECTION 2016</h1>
+
+                </div>
+            </div>
+
+            <div class="w3-container w3-text-grey" id="Div13">
+
+            </div>
+
+            <!-- Product grid -->
+            <div class="w3-row w3-grayscale">
+                <div class="w3-col l12 s12 w3-justify">
+                    <div class="w3-container">
+                        <!--<img src="https://www.w3schools.com/w3images/h1.jpg" style="width:100%">-->
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="w3-col l12 s12">
+                    <div class="w3-container">
+                        <table style="width:100%;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
     </div>
     <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
         <div class="w3-row-padding">
@@ -458,7 +931,7 @@
             document.getElementById("myOverlay").style.display = "none";
         }
         $(window).scroll(function (event) {
-            
+
             $('#Servies [class="w3-container w3-center"]').each(function () {
                 var pos = $(this).offset().top;
 
@@ -466,7 +939,7 @@
                 if (pos < winTop + 600) {
                     $(this).addClass('slideAnimation');
                 }
-                
+
 
             })
         })
